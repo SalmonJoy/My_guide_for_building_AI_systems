@@ -27,7 +27,7 @@ Incoming LLM output is validated against the schema; on failure the model return
 ## Architecture Diagram
 ```mermaid
 graph TD
-  "User Input" --> A[Prompt Builder]
+  U["User Input"] --> A[Prompt Builder]
   A --> B["LLM (GPT‑4)"]
   B --> C{LLM Output}
   C -->|valid JSON| D[Schema Validator]
