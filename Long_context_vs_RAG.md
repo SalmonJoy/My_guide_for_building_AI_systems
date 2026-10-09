@@ -47,7 +47,7 @@ The decision matrix, ADRs, and sample code below formalise these insights.
 ### 2.1 High‑Level Decision Flow  
 
 ```mermaid
-%%{init: {'theme':'base','themeVariables':{'primaryColor':'#0e7c7b','primaryTextColor':'#ffffff','edgeLabelBackground':'#f5f5f5','nodeBorder':'#0e7c7b'}}}%%
+%%{init: {'theme':'base','themeVariables':{'primaryColor':'#0e7c7b','primaryTextColor':'#000000','edgeLabelBackground':'#f5f5f5','nodeBorder':'#0e7c7b'}}}%%
 graph TD
     A[Start – Identify Knowledge Source] --> B{"Is the source <br>**static**, <br>**short (&lt; 5 KB)**, <br>**low‑risk?**"}
     B -- Yes --> C["Full‑Doc Prompting<br>(single LLM call)"]
